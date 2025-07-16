@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+</head>
+<body class="overflow-hidden">
+    <div class="absolute top-0 w-full drop-shadow"></div>
+    <div id="home-hero-bg" class="hidden"></div>
+   {% include 'partials/navbar.twig' %}
+    {% include 'partials/sidebar.twig' %}
+
+    <main class="p-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include 'partials/footer.twig' %}
+</body>
+</html>
