@@ -9,13 +9,24 @@
 <body class="overflow-hidden">
     <div class="absolute top-0 w-full drop-shadow"></div>
     <div id="home-hero-bg" class="hidden"></div>
-   {% include 'partials/navbar.twig' %}
+    {% include 'partials/navbar.twig' %}
     {% include 'partials/sidebar.twig' %}
 
-    <main class="p-4">
-        {% block content %}{% endblock %}
+    <main class="p-4 mb-5" style="height: 100vh; overflow-y: scroll;">
+      {% block content %}{% endblock %}
+    
+      {% include 'pages/tab-assets.html.twig' %}
+      {% include 'pages/tab-account.html.twig' %}
+      {% include 'pages/tab-branding.html.twig' %}
+      {% include 'pages/tab-collection.html.twig' %}
+      {% include 'pages/tab-home.html.twig' %}
+      {% include 'pages/tab-packages.html.twig' %}
+      {% include 'pages/tab-uploads.html.twig' %}
+
     </main>
 
     {% include 'partials/footer.twig' %}
+    {{ encore_entry_script_tags('app') }} 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.1.11/lib.min.js" integrity="sha512-tE7j0ptGYRtx0sHRAOkHNLAuIqVW7udzmjvNh1A6vIEnWUJnx7j7khwTEjemjDaauV+lHo0jEtdW8jn5weoxhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

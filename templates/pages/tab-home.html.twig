@@ -1,0 +1,219 @@
+
+	<!-- Home Tab start -->
+	<div id="tabContent" class="tab-content home flex-1 transition-all duration-1000 px-16 2xl-max:px-10 xl-max:pl-6 xl-max:pr-6 md-max:px-0 max-w-[1500px] mx-auto" style="transition: width 0.3s ease" data-tab="home" aria-label="home">
+		<div
+			class="content-area pb-6 pt-4 h-full desktop-margin md-max:pl-0 md-max:pr-6" id="content-area">
+			<!-- hero -->
+			<div class="flex flex-row justify-between xl-max:flex-wrap gap-7 transition-all duration-1000 w-full md-max:pr-0 py-14">
+				<div class="hero-left text-basic-blue">
+					<span class="text-[32px] font-semibold">Welcome!</span>
+					<h2 class="text-6xl font-black mb-4 md-max:text-4xl">
+						Max Mustermann
+					</h2>
+					<h3 class="text-black font-semibold text-lg flex gap-4 xl-max:hidden">
+						Use the search bar to find the asset you are looking for!
+						<img src="{{ asset('build/images/arrow.png') }}" alt=""/>
+					</h3>
+				</div>
+				<div class="hero-right grid grid-flow-col grid-cols-3 md-max:grid-flow-dense md-max:grid-cols-2 gap-6">
+					<a class="box uppercase flex flex-col text-center items-center font-black text-lg md-max:text-base bg-white pt-10 pb-4 w-full rounded-xl shadow-lg" href="?tab=assets">
+						<img src="{{ asset('build/images/svg/assets-blue.svg') }}" alt="Assets">
+						All assets
+						<div class="count text-sm text-accent-blue">[12.345]</div>
+					</a>
+					<a class="box uppercase flex flex-col items-center text-center font-black text-lg md-max:text-base bg-white pt-10 w-full pb-4 px-10 rounded-xl shadow-lg" href="?tab=packages">
+						<img src="{{ asset('build/images/svg/packages-blue.svg') }}" alt="Packages">
+
+						All Packages
+						<div class="count text-sm text-accent-blue">[12.345]</div>
+					</a>
+					<a class="box uppercase flex flex-col items-center text-center font-black text-lg md-max:text-base bg-white pt-10 pb-4 w-full rounded-xl shadow-lg" href="?tab=collections">
+						<img src="{{ asset('build/images/svg/collections-blue.svg') }}" alt="Collections">
+
+						My Collections
+						<div class="count text-sm text-accent-blue">[12.345]</div>
+					</a>
+				</div>
+			</div>
+			<!-- search -->
+			<h3 class="text-black font-semibold text-lg gap-4 hidden xl-max:flex mb-6">
+				Use the search bar to find the asset you are looking for!
+				<img src="{{ asset('build/images/arrow.png') }}" alt=""/>
+			</h3>
+			<div class="relative max-w-[65%] xl-max:max-w-full w-full">
+				<input id="search-input" type="text" placeholder="Enter search item" class="w-full text-base py-3.5 px-7 pr-10 md-max:pr-[55px] rounded-full border placeholder:text-tints-black focus:outline-none border-1 border-tints-light-blue focus:border-tints-light-blue drop-shadow-md" aria-label="Search input field"/>
+				<span id="clear-btn" class="clear-btn"><img src="{{ asset('build/images/cancel.png') }}" alt=""/></span>
+				<div class="absolute right-5 top-1/2 transform -translate-y-1/2">
+					<img class="h-6 w-6" src="{{ asset('build/images/svg/search-blue.svg') }}" alt="Search">
+				</div>
+			</div>
+			<!-- search and card -->
+			<div class="flex gap-8 w-full xl-max:flex-wrap">
+				<div class="w-full max-w-[66%] md-max:flex-col xl-max:max-w-full flex gap-8" id="card-area">
+					<div class="w-1/2 md-max:w-full flex-1 mt-16 md-max:mt-6">
+						<div class="text-basic-blue text-[22px] font-semibold mb-[18px]">
+							Highlight package
+						</div>
+						<div class="card rounded-xl overflow-hidden shadow-lg">
+							<div class="relative group">
+								<img src="{{ asset('build/images/3.png') }}" alt="" class="max-h-[209px] w-full h-full object-cover"/>
+								<a class="show absolute inset-0 z-10 flex items-center font-black justify-center text-white uppercase bg-black/50 opacity-0 visibility-hidden transition-all duration-500 group-hover:opacity-100 group-hover:visibility-visible group-hover:bg-[#004388b3] group-hover:text-xl group-hover:pt-[100px]" href="">
+									show package
+								</a>
+							</div>
+							<div class="text-area font-black px-5 pb-6 relative -mt-[54px] pt-16">
+								<h2 class="text-[26px] md-max:text-xl pt-2">
+									Name of the Package
+								</h2>
+								<div class="text-lg text-accent-blue">
+									[12 Assets]
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-1/2 md-max:w-full flex-1 mt-16 md-max:mt-6">
+						<div class="text-basic-blue text-[22px] font-semibold mb-[18px]">
+							Latest package
+						</div>
+						<div class="card rounded-xl overflow-hidden shadow-lg">
+							<div class="relative group">
+								<img src="{{ asset('build/images/2.png') }}" alt="" class="max-h-[209px] w-full object-cover"/>
+								<a class="show absolute inset-0 z-10 flex items-center font-black justify-center text-white uppercase bg-black/50 opacity-0 visibility-hidden transition-all duration-500 group-hover:opacity-100 group-hover:visibility-visible group-hover:bg-[#004388b3] group-hover:text-xl group-hover:pt-[100px]" href="">
+									show package
+								</a>
+							</div>
+
+							<div class="text-area font-black px-5 pb-6 relative -mt-[54px] pt-16">
+								<h2 class="text-[26px] md-max:text-xl pt-2">
+									Name of the Package
+								</h2>
+								<div class="text-lg text-accent-blue">
+									[12 Assets]
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full max-w-[66%] block xl-max:max-w-full px-4 pb-6 border border-[#BFD2E0] mt-3 rounded-xl bg-white shadow-md" id="search-area">
+					<div class="results" class="max-h-[210px] overflow-y-auto w-full flex flex-col">
+						<div class="font-semibold text-xl py-6 text-basic-blue">
+							Results in Assets (266)
+						</div>
+						<div class="flex flex-col max-h-[210px] overflow-y-auto">
+							<div class="border border-l-0 border-r-0 border-b-0 border-[#BFD2E0] p-[10px] last:border-t-0">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black">JPG</span>
+								</div>
+							</div>
+							<div class="border border-l-0 border-r-0 border-b-0 border-[#BFD2E0] p-[10px] last:border-t-0">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black">JPG</span>
+								</div>
+							</div>
+							<div class="border border-l-0 border-r-0 border-[#BFD2E0] p-[10px] last:border-t-0">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black">JPG</span>
+								</div>
+							</div>
+							<div class="border border-l-0 border-r-0 border-[#BFD2E0] p-[10px] last:border-t-0">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black">JPG</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="results" class="max-h-[210px] overflow-y-auto w-full flex flex-col">
+						<div class="font-semibold text-xl py-6 text-basic-blue">
+							Results in Packages (21)
+						</div>
+						<div class="flex flex-col max-h-[210px] overflow-y-auto">
+							<div class="border border-l-0 border-r-0 border-b-0 border-[#BFD2E0] p-[10px]">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black text-accent-blue text-sm">[21 ASSETS]</span>
+								</div>
+							</div>
+							<div class="border border-l-0 border-r-0 border-b-0 border-[#BFD2E0] p-[10px] last:border-t-0">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black text-accent-blue text-sm">[8 ASSETS]</span>
+								</div>
+							</div>
+							<div class="border border-l-0 border-r-0 border-[#BFD2E0] p-[10px]">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold">
+										<img src="{{ asset('build/images/search.png') }}" class="h-12 w-12 object-cover openShareModal" alt=""/>Hier steht als Beispiel der sehr lange
+										                              Freudenberg Dateiname</span>
+									<span class="font-black text-accent-blue text-sm">[56 ASSETS]</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="results" class="max-h-[210px] overflow-y-auto w-full flex flex-col">
+						<div class="font-semibold text-xl py-6 text-basic-blue">
+							Results in Tags (2)
+						</div>
+						<div class="flex flex-col max-h-[210px] overflow-y-auto">
+							<div class="border border-l-0 border-r-0 border-b-0 border-[#BFD2E0] py-4">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold bg-[#9CD2F0] py-1 px-3.5 rounded-[4px]">
+										Freudenberg-Beispiel-Tag-01
+									</span>
+									<span class="font-black text-accent-blue text-sm">[21 ASSETS]</span>
+								</div>
+							</div>
+							<div class="border border-l-0 border-r-0 border-[#BFD2E0] py-4">
+								<div class="flex justify-between items-center">
+									<span class="flex gap-7 items-center text-base font-semibold bg-[#9CD2F0] py-1 px-3.5 rounded-[4px]">
+										Freudenberg-Beispiel-Tag-02
+									</span>
+									<span class="font-black text-accent-blue text-sm">[21 ASSETS]</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full mt-16 max-w-[33%] xl-max:max-w-[50%] xl-max:mt-4 full-width">
+					<div class="text-transparent text-[22px] font-semibold mb-[18px] xl-max:hidden">
+						.
+					</div>
+					<div class="bg-[#F2F5F9] font-semibold w-full max-w-[442px] md-max:max-w-full flex flex-col p-6 tex-base rounded-xl h-full max-h-[320px]">
+						<span class="border border-l-0 border-r-0 border-[#BFD2E0] py-4">Lorem ipsum dolor
+							<a href="#" class="underline">amet Link</a>
+						</span>
+						<span class="border-[#BFD2E0] py-4">Lorem ipsum dolor
+							<a href="#" class="underline">amet Link</a>
+						</span>
+						<span class="border border-l-0 border-r-0 border-[#BFD2E0] py-4">Lorem ipsum dolor
+							<a href="#" class="underline">amet Link</a>
+						</span>
+						<div class="flex justify-end items-center text-accent-blue text-[26px] font-black gap-1 mt-11">
+							<img src="{{ asset('build/images/bell.png') }}" class="w-[26px] h-[23px] object-contain -mt-1" alt=""/>
+							Notifications
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Home Tab end -->
+
+	  

@@ -1,0 +1,49 @@
+ 
+	<!-- Upload Tab start -->
+	<div id="tabContent" class="tab-content home flex-1 transition-all duration-1000 px-14 2xl-max:px-0 max-w-[1500px] mx-auto" style="transition: width 0.3s ease" aria-label="upload" data-tab="upload">
+		<div class="content-area pb-6 h-full desktop-margin md-max:pl-0" id="content-area">
+			<div class="flex flex-row flex-wrap gap-7 md-max:gap-3 transition-all duration-1000 w-full md-max:pr-6 pl-6" id="not-upload">
+				<div class="z-0 relative">
+					<div class="text-[22px] sm-max:text-lg font-semibold flex gap-2 sm-max:flex-wrap">
+						Files for Upload:
+						<span class="text-accent-blue text-lg sm-max:text-base font-black uppercase pr-3">[10 Files]</span>
+						<div class="delete flex gap-2 text-base font-semibold cursor-pointer">
+							<img src="../src/images/trash.png" alt="" class="h-5 object-contain"/>
+							Delete all files
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-row flex-wrap gap-7 transition-all duration-1000 w-full relative mt-10 md-max:mt-4">
+					<!-- upload card 1  -->
+					<div class="upload-card w-[190px] h-[190px] relative" aria-label="Upload Card">
+						<div class="flex bg-[#99BFDB] items-center justify-center overflow-hidden rounded-xl">
+							<img src="{{ asset('build/images/car.png') }}" alt="" class="w-full h-[190px] object-cover"/>
+							<img src="{{ asset('build/images/delete.svg') }}" alt="" class="absolute z-20 -right-3 -top-3 cursor-pointer shadow-lg rounded-full"/>
+							<div class="overlay text-sm font-semibold text-white absolute z-10 bg-[#004388] opacity-80 h-full w-full rounded-xl">
+								<div class="inner flex flex-col justify-end h-full py-6 px-3">
+									<span class="text-base">
+										2,3 MB</span>
+									Beispiel-für-einen-langen-Dateinamen.jpg
+								</div>
+							</div>
+						</div>
+					</div>
+					 
+				</div>
+			</div>
+			<div class="flex flex-col flex-wrap gap-[18px] mb-[100px] sm-max:mb-[130px] transition-all duration-1000 w-full md-max:pr-6 pl-6 h-full mt-20 hidden" id="upload-success">
+				<img src="{{ asset('build/images/upload.png') }}" alt="" class="h-[54px] w-[54px] object-contain"/>
+				<span class="text-[36px] sm-max:text-3xl font-black text-basic-blue uppercase">
+					The files were uploaded successfully
+				</span>
+				<span class="text-[22px] sm-max:text-lg font-semibold">The files are waiting to be processed under the “Account”
+					                    section.</span>
+				<a class="bg-btn w-fit flex items-center text-base font-semibold md-max:text-[12px] px-8 py-[9px] rounded-full gap-2 text-white bg-basic-blue border-2 border-basic-blue" aria-label="Edit File" href="../src/account.html">
+					Edit files
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Upload Tab end -->
+ 

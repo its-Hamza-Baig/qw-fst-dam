@@ -10,21 +10,21 @@
           class="sidebar-icon px-7 pt-5 pb-3 flex flex-col items-center justify-center space-y-3 bg-tints-of-blue rounded-xl hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl"
           aria-label="Home"
           id="home"
-          href="../home.html"
+          href="?tab=home"
         >
           <div class="">
-            <img src="../images/svg/home-white.svg" alt="Home">
+            <img src="{{ asset('build/images/svg/home-white.svg') }}" alt="Home">
           </div>
           <span class="text-xs font-semibold">HOME</span>
         </a>
         <a
-          class="sidebar-icon px-7 pt-5 pb-3 flex flex-col items-center justify-center space-y-3 bg-tints-of-blue rounded-xl hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl active"
+          class="sidebar-icon px-7 pt-5 pb-3 flex flex-col items-center justify-center space-y-3 bg-tints-of-blue rounded-xl hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl"
           aria-label="Assets"
           id="assets"
-          href="../assets.html"
+          href="?tab=assets"
         >
           <div class="">
-            <img src="../images/svg/assets-black.svg" alt="Assets">
+            <img src="{{ asset('build/images/svg/assets-black.svg') }}" alt="Assets">
           </div>
           <span class="text-xs font-semibold">ASSETS</span>
         </a>
@@ -32,10 +32,10 @@
           class="sidebar-icon px-7 pt-5 pb-3 flex flex-col items-center justify-center space-y-3 bg-tints-of-blue rounded-xl hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl"
           aria-label="Packages"
           id="packages"
-          href="../packages.html"
+          href="?tab=packages"
         >
           <div class="">
-            <img src="../images/svg/packages-black.svg" alt="Packages">
+            <img src="{{ asset('build/images/svg/packages-black.svg') }}" alt="Packages">
           </div>
           <span class="text-xs font-semibold">PACKAGES</span>
         </a>
@@ -43,10 +43,10 @@
           class="sidebar-icon px-7 pt-5 pb-3 flex flex-col items-center justify-center space-y-3 bg-tints-of-blue rounded-xl hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl"
           aria-label="Collections"
           id="collections"
-          href="../collections.html"
+          href="?tab=collections"
         >
           <div class="">
-            <img src="../images/svg/collections-black.svg" alt="share">
+            <img src="{{ asset('build/images/svg/collections-black.svg') }}" alt="share">
           </div>
           <span class="text-xs font-semibold">COLLECTIONS</span>
         </a>
@@ -54,10 +54,10 @@
           class="sidebar-icon px-7 pt-5 pb-3 flex flex-col items-center justify-center space-y-3 bg-tints-of-blue rounded-xl hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl"
           aria-label="Branding"
           id="branding"
-          href="../branding.html"
+          href="?tab=branding"
         >
           <div class="">
-            <img src="../images/svg/branding-black.svg" alt="Branding">
+            <img src="{{ asset('build/images/svg/branding-black.svg') }}" alt="Branding">
           </div>
           <span class="text-xs font-semibold">BRANDING</span>
         </a>
@@ -68,18 +68,18 @@
           class="sidebar-bottom-icon pl-4 pr-6 py-5 flex items-center justify-center space-x-3 bg-tints-blue hover:bg-accent-blue hover:transition hover:duration-300 hover:ease-in-out"
           aria-label="Upload"
           id="upload"
-          href="../upload.html"
+          href="?tab=upload"
         >
-          <img src="../images/svg/upload-black.svg" alt="share">
+          <img src="{{ asset('build/images/svg/upload-black.svg') }}" alt="share">
           <span class="text-[14px] font-semibold">UPLOAD</span>
         </a>
         <a
           class="sidebar-bottom-icon pl-4 pr-6 py-5 flex items-center justify-center space-x-3 bg-tints-blue hover:bg-accent-blue hover:transition hover:duration-300 hover:ease-in-out"
           aria-label="account"
           id="account"
-          href="../account.html"
+          href="?tab=account" 
         >
-          <img src="../images/svg/account-black.svg" alt="Account">
+          <img src="{{ asset('build/images/svg/account-black.svg') }}" alt="Account">
 
           <span class="text-[14px] font-semibold">ACCOUNT</span>
         </a>
@@ -89,7 +89,7 @@
           href="../index.html"
           aria-label="Logout"
         >
-          <img src="../images/logout.svg" alt="" class="h-6" />
+          <img src="{{ asset('build/images/logout.svg') }}" alt="" class="h-6" />
           <span class="text-[14px] font-semibold">LOGOUT</span>
         </a>
       </div>
